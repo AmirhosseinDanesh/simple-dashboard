@@ -1,0 +1,20 @@
+.menu_item_active{
+    background: white;
+    border-radius: 21px;
+}
+.menu_item_active a{
+    color:#5459EA !important;
+}
+#collapseExample,#collapseExample2{
+    transition: 900ms;
+}
+.menu_collapse-icon{
+    rotate:-90deg;
+}
+
+
+.collapsed .menu_collapse-icon{
+    rotate:0deg;
+    
+
+}

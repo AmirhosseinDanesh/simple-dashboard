@@ -1,17 +1,17 @@
 
 import React, { Component } from 'react';
-import './InfoChart.css'
+import './Battery.css'
 import { CircularProgressbar, } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 
-class InfoChart extends Component {
+class Battery extends Component {
     state = {
         battery: null
     }
 
     componentDidMount() {
-        navigator.getBattery()
+        window.navigator.getBattery()
             .then(res => {
                 // let battery = res.level*100
                 this.setState({
@@ -83,7 +83,7 @@ class InfoChart extends Component {
     }
 }
 
-export default InfoChart;
+export default Battery;
 
 
 

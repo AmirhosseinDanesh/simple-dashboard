@@ -3,7 +3,7 @@ import './IndexContent.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NabvarContent from '../Navbar/NabvarContent';
-import Orders from '../OrderInfo/Orders';
+import Orders from '../OrderAndClock/Orders';
 import Users from '../UsersContent/Users';
 
 

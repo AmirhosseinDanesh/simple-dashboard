@@ -1,16 +1,16 @@
-.thead{
-    background-color: #F7F8FA;
+.thead {
+  background-color: #f7f8fa;
 }
-th{
-    color:#505470;
-    font-weight:normal;
+th {
+  color: #505470;
+  font-weight: normal;
 }
-.table_head{
-    border-bottom:1px solid;
+.table_head {
+  border-bottom: 1px solid;
 }
 
 table {
-    border-collapse: collapse;
-    border-radius: 15px;
-    
-  }     
+  border-collapse: collapse;
+  border-radius: 15px;
+}
+

@@ -14,8 +14,8 @@ export default function NabvarContent(props) {
             if(e.keyCode === 191){
                 navInput.focus()
                 
+                navInput.value=""
             }
-            navInput.value=" "
         })
         
 
@@ -26,33 +26,29 @@ export default function NabvarContent(props) {
             hidden.classList.toggle("visually-hidden")
         })
 
+
+
+
         let navBtn = document.querySelector("#menuToggle")
         let nav = document.querySelector("nav")
         let main = document.querySelector("main")
-        let sidebarText = document.querySelectorAll(".sidebar_text")
-        let profileInfo = document.querySelector(".profile_info")
+        let activer = document.querySelector(".activer")
+        
         navBtn.addEventListener("click", function () {
             if (nav.classList.contains("col-md-3")) {
                 nav.classList.remove("col-md-3")
                 nav.classList.add("col-md-1")
                 main.classList.remove("col-md-9")
                 main.classList.add("col-md-11")
-                sidebarText.forEach((tex) => {
-                    tex.style.display = "none"
-                })
-                profileInfo.style.display = "none"
+                activer.classList.add("active")
+                
 
             } else {
                 nav.classList.add("col-md-3")
                 nav.classList.remove("col-md-1")
                 main.classList.add("col-md-9")
                 main.classList.remove("col-md-11")
-
-                sidebarText.forEach((tex) => {
-                    tex.style.display = "block"
-                })
-
-                profileInfo.style.display = "block"
+                activer.classList.remove("active")
 
             }
         })

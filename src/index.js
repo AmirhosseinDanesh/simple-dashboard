@@ -1,8 +1,8 @@
 import React from 'react';
+import './style.css'
 import ReactDOM from 'react-dom/client';
 import Sidebar from './Sidebar/Sidebar';
 import IndexContent from './MainContent/IndexContent/IndexContent';
-import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

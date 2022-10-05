@@ -6,7 +6,7 @@ import './SBProfile.css'
 
 function SBProfile() {
     return (
-        <div className='d-flex'>
+        <div className='d-flex w-100'>
             <div className='nav_profile d-flex justify-content-between align-items-center py-3'>
                 <div className='profile_img'>
                     <img src={'./pictures/nav/profile.png'} width="55px" alt="#" id='profile_img_border' className='rounded-circle  p-1' />

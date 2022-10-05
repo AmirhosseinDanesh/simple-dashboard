@@ -14,7 +14,7 @@ export default function Orders() {
             <OrderInfo name="Total Earnings" count="12000" sign="$" icon={Svg2} fontColor="rgba(255, 51, 63, 1)" bgColor="rgba(255, 51, 63, 0.2)" />
             <OrderInfo name="Profit" count="2400" sign="$" icon={Svg3} fontColor="rgba(255, 149, 51, 1)" bgColor="rgba(255, 149, 51, 0.2)" />
             <Chart/>
-            <Chart/>
+            
         </div>
 
 

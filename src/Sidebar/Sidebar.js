@@ -6,7 +6,7 @@ import "./Sidebar.css"
 
 export default function sidebar() {
   return (
-    <nav className='d-flex col-md-3'>
+    <nav className='d-none d-md-flex col-md-3'>
       <div className='container ps-md-3 mt-2 activer'>
         <div className="sticky-top">
           <SBProfile />

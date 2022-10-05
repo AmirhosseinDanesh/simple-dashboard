@@ -9,7 +9,7 @@ let Svg3 = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="ht
 
 export default function Orders() {
     return (
-        <div className='row py-4 mx-2'>
+        <div className='row justify-content-center  py-0 py-md-4 mx-0 mx-md-2'>
             <OrderInfo name="Total Orders" count="7500" icon={Svg1} fontColor="rgba(51, 102, 255, 1)" bgColor="rgba(51, 102, 255, 0.2)" />
             <OrderInfo name="Total Earnings" count="12000" sign="$" icon={Svg2} fontColor="rgba(255, 51, 63, 1)" bgColor="rgba(255, 51, 63, 0.2)" />
             <OrderInfo name="Profit" count="2400" sign="$" icon={Svg3} fontColor="rgba(255, 149, 51, 1)" bgColor="rgba(255, 149, 51, 0.2)" />

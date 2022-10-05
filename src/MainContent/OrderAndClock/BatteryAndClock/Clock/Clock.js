@@ -35,7 +35,7 @@ class Clock extends Component {
 
     render() {
         return (
-            <div className='col-md-3'>
+            <div className='col-11 py-4 py-md-0 col-md-3'>
                 <div className='ClockColor d-flex justify-content-center'>
                     <div class="clock">
                         <div class="outer-clock-face">

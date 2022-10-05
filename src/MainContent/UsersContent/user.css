@@ -1,8 +1,14 @@
-
-.userSearch{
-    border-radius:10px;
+.userSearch {
+  border-radius: 10px;
 }
 
 .navInput2:focus {
-    outline: none;
-  }
+  outline: none;
+}
+
+
+.tableOver{
+    overflow-x:auto;
+}
+
+

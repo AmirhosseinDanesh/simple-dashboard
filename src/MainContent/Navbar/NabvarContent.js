@@ -57,8 +57,8 @@ export default function NabvarContent(props) {
 
 
     return (
-        <div className='row  pt-3'>
-            <div className="col-md-1">
+        <div className='row justify-content-center justify-content-md-between pt-3'>
+            <div className="col-12 col-md-1">
                 <div className=' m-2 p-2 pe-5'>
                     <div id="menuToggle">
                         <input type="checkbox" />
@@ -68,7 +68,7 @@ export default function NabvarContent(props) {
                     </div>
                 </div>
             </div>
-            <div className='col-md-6'>
+            <div className='col-12 col-md-6'>
                 <div className="Navbar_input d-flex align-items-center  m-2 p-2 pe-5 ">
                     <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.5 19.5L12.5 14.5M14.1667 10.3333C14.1667 11.0994 14.0158 11.8579 13.7226 12.5657C13.4295 13.2734 12.9998 13.9164 12.4581 14.4581C11.9164 14.9998 11.2734 15.4295 10.5657 15.7226C9.85792 16.0158 9.09938 16.1667 8.33333 16.1667C7.56729 16.1667 6.80875 16.0158 6.10101 15.7226C5.39328 15.4295 4.75022 14.9998 4.20854 14.4581C3.66687 13.9164 3.23719 13.2734 2.94404 12.5657C2.65088 11.8579 2.5 11.0994 2.5 10.3333C2.5 8.78624 3.11458 7.30251 4.20854 6.20854C5.30251 5.11458 6.78624 4.5 8.33333 4.5C9.88043 4.5 11.3642 5.11458 12.4581 6.20854C13.5521 7.30251 14.1667 8.78624 14.1667 10.3333Z" stroke="#94A3B8" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
@@ -76,7 +76,7 @@ export default function NabvarContent(props) {
                     <input type="text" className='navInput ms-2 ' placeholder='Press / to search' />
                 </div>
             </div>
-            <div className="col-md-1 d-flex justify-content-center">
+            <div className="col-6 mt-3 mt-md-0 col-md-1 d-flex justify-content-center">
                 <div className="alert">
                     <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 15H17L15.595 13.595C15.4063 13.4063 15.2567 13.1822 15.1546 12.9357C15.0525 12.6891 15 12.4249 15 12.158V9C15.0002 7.75894 14.6156 6.54834 13.8992 5.53489C13.1829 4.52144 12.17 3.75496 11 3.341V3C11 2.46957 10.7893 1.96086 10.4142 1.58579C10.0391 1.21071 9.53043 1 9 1C8.46957 1 7.96086 1.21071 7.58579 1.58579C7.21071 1.96086 7 2.46957 7 3V3.341C4.67 4.165 3 6.388 3 9V12.159C3 12.697 2.786 13.214 2.405 13.595L1 15H6M12 15V16C12 16.7956 11.6839 17.5587 11.1213 18.1213C10.5587 18.6839 9.79565 19 9 19C8.20435 19 7.44129 18.6839 6.87868 18.1213C6.31607 17.5587 6 16.7956 6 16V15M12 15H6" stroke="#64748B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -87,7 +87,7 @@ export default function NabvarContent(props) {
                     </span>
                 </div>
             </div>
-            <div className="col-md-1 d-flex justify-content-center">
+            <div className="col-6 mt-3 mt-md-0 col-md-1 d-flex justify-content-center">
                 <div className='Navbar_logout_icon' >
                     <button className='btn' type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Log out">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" >

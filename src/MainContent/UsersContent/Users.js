@@ -33,22 +33,22 @@ class Users extends Component {
                         </svg>
                         <input type="text" className='navInput2 ms-2 ' id='inputId' placeholder='Search user' />
                     </div>
-                    <div className='table-responsive d-none d-md-block'>
+                    <div className='table-responsive  d-md-block'>
                         <table className='table'>
                             <thead className='thead'>
                                 <tr className='table_head'>
-                                    <th>id</th>
-                                    <th>name</th>
-                                    <th>email</th>
-                                    <th>phone</th>
-                                    <th>city</th>
-                                    <th>zipcode</th>
+                                    <th scope="col">id</th>
+                                    <th scope="col">name</th>
+                                    <th scope="col">email</th>
+                                    <th scope="col">phone</th>
+                                    <th scope="col">city</th>
+                                    <th scope="col">zipcode</th>
                                 </tr>
                             </thead>
                             <tbody className='tablebody' id="tableId">
                                 {this.state.users.map(user => (
                                     <tr id='trTable'>
-                                        <td>{user.id}</td>
+                                        <th scope="row">{user.id}</th>
                                         <td>
                                             <a href="#/">{user.name}</a>
                                         </td>

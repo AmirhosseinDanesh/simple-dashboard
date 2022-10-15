@@ -23,10 +23,10 @@ class Battery extends Component {
 
     render() {
         return (
-            <div className='col-11 py-4 py-md-0 col-md-3'>
+            <div className='col-5 py-4 py-md-0 col-md-3'>
                 <div className='bgColor d-flex justify-content-center'>
                     <span className=''>
-                        <div className='batteryInfo d-flex' style={{ width: 250, height: 110, background: "#36f" }}>
+                        <div className='batteryInfo d-flex' style={{ width: 130, height: 110, background: "#36f" }}>
                             <CircularProgressbar value={this.state.battery} text={`${this.state.battery}%`}
                                 styles={{
                                     root: {},
@@ -51,7 +51,7 @@ class Battery extends Component {
                                     },
                                 }}
                             />
-                            <CircularProgressbar value={this.state.battery} text={`${this.state.battery}%`}
+                            {/* <CircularProgressbar value={this.state.battery} text={`${this.state.battery}%`}
                                 styles={{
                                     root: {},
                                     path: {
@@ -74,7 +74,7 @@ class Battery extends Component {
                                         fill: 'white',
                                     },
                                 }}
-                            />
+                            /> */}
                         </div>
                     </span>
                 </div>

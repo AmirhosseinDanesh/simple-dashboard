@@ -98,7 +98,7 @@ export default function NabvarContent(props) {
                 </div>
             </div>
             <div className='col-md-3 d-flex justify-content-center'>
-                <div class="flipCalendar">
+                <div className="flipCalendar">
                     
                 </div>
             </div>

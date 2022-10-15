@@ -21,7 +21,7 @@ class Users extends Component {
                     users: data
                 })
             })
-    }
+    } 
 
     render() {
         return (
@@ -33,7 +33,7 @@ class Users extends Component {
                         </svg>
                         <input type="text" className='navInput2 ms-2 ' id='inputId' placeholder='Search user' />
                     </div>
-                    <div className='table-responsive d-none'>
+                    <div className='table-responsive d-none d-md-block'>
                         <table className='table'>
                             <thead className='thead'>
                                 <tr className='table_head'>

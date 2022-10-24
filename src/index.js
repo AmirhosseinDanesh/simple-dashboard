@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
       <Sidebar />
-      <main className='d-md-flex col-md-9'>
+      <main className='d-md-flex col-12 col-md-9'>
         <IndexContent />
       </main>
   </>

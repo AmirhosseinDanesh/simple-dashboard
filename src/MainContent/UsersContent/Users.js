@@ -33,7 +33,7 @@ class Users extends Component {
                         </svg>
                         <input type="text" className='navInput2 ms-2 ' id='inputId' placeholder='Search user' />
                     </div>
-                    <div className='table-responsive  d-md-block'>
+                    <div className='table-responsive col-10 col-md-12 d-md-block'>
                         <table className='table'>
                             <thead className='thead'>
                                 <tr className='table_head'>
@@ -45,7 +45,7 @@ class Users extends Component {
                                     <th scope="col">zipcode</th>
                                 </tr>
                             </thead>
-                            <tbody className='tablebody' id="tableId">
+                            <tbody className='tablebody'>
                                 {this.state.users.map(user => (
                                     <tr id='trTable'>
                                         <th scope="row">{user.id}</th>

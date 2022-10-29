@@ -23,7 +23,7 @@ class Battery extends Component {
 
     render() {
         return (
-            <div className='col-5 py-4 py-md-0 col-md-3'>
+            <div className='col-6 py-4 py-md-0 col-md-3'>
                 <div className='bgColor d-flex justify-content-center'>
                     <span className=''>
                         <div className='batteryInfo d-flex' style={{ width: 130, height: 110, background: "#36f" }}>

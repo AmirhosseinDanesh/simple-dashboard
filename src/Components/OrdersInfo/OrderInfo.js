@@ -5,7 +5,7 @@ import './Orderinfo.css'
 export default function OrderInfo(props) {
     let {name , count, bgColor , icon , fontColor , sign} = props
     return (     
-            <div className="col-11 col-md-2 px-2 py-4 py-md-0">
+            <div className="col-6 col-md-2 px-2 py-4 py-md-0">
                 <div className=''>
                     <div className='info d-flex justify-content-between py-3' style={{backgroundColor: bgColor}}>
                         <div className=''>

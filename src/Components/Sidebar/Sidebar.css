@@ -1,0 +1,40 @@
+.active .sidebar_text{
+    display: none;
+
+}
+.active .profile_info {
+  display: none;
+}
+.active .profile_img {
+    margin-left: 2.3rem;
+}
+
+.active .menu_ul{
+    justify-content: center !important;
+    margin-bottom: 1.5rem;
+}
+.active .dashText{
+   display:none;
+}
+
+@media only screen and (max-width: 716px) {
+    .sidebar_text{
+        display: none;
+    
+    }
+    .profile_info {
+      display: none;
+    }
+    .active .profile_img {
+        margin-left: 0px;
+    }
+    
+    
+    .menu_ul{
+        justify-content: center !important;
+        margin-bottom: 1.5rem;
+    }
+    .dashText{
+       display:none;
+    } 
+}

@@ -13,9 +13,9 @@ export default function SBMenu() {
           </svg>
         </div>
 
-        <ul className="menu_list text-white ps-md-2 collapse show" id="collapseExample">
+        <ul className="menu_list text-white ps-0 ps-md-2 collapse show" id="collapseExample">
           <a href="#/">
-            <li className="menu_item py-md-3 menu_item_active px-3 ">
+            <li className="menu_item py-md-3 menu_item_active px-3 mb-2 ">
               <div className='d-flex justify-content-between ps-1'>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">main</a>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,9 +48,9 @@ export default function SBMenu() {
           </svg>
         </div>
         <div className='menu_list'>
-          <ul className="menu_list text-white ps-md-2 collapse show" id="collapseExample2">
+          <ul className="menu_list text-white ps-md-2 ps-0 collapse show" id="collapseExample2">
             <a href="#/">
-              <li className="menu_item py-md-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3  px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text  text-white text-decoration-none  ' href="/#">Addresses</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item py-md-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3  px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Comments</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item py-md-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3  px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Posts</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item py-md-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3  px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Purchases</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +94,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item ps-3 py-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3    px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Roles</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item ps-3 py-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3     px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Tags</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item ps-3 py-3  px-3 ">
+              <li className="menu_item mb-2 py-md-3     px-3 ">
                 <div className='d-flex justify-content-between ps-1'>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Users</a>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

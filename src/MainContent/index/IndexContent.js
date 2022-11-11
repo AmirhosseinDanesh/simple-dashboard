@@ -1,6 +1,6 @@
 import React from 'react'
 import './IndexContent.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container , Row } from 'react-bootstrap';
 
 import NabvarContent from '../../Components/Navbar/NabvarContent';
 import OrderInfo from '../../Components/OrdersInfo/OrderInfo';
@@ -19,19 +19,19 @@ export default function IndexContent() {
 
   return (
     <main className='d-md-flex col-10 col-md-9'>
-      <div className='container'>
+      <Container>
         <div className='mainBgContent mt-3'>
           <NabvarContent messageNumber="23 " />
-          <div className='row justify-content-center  py-0 py-md-4 mx-0 mx-md-2'>
+          <Row className='justify-content-start py-0 py-md-4 mx-0 mx-md-2'>
             <OrderInfo name="Total Orders" count="7500" icon={Svg1} fontColor="rgba(51, 102, 255, 1)" bgColor="rgba(51, 102, 255, 0.2)" />
             <OrderInfo name="Total Earnings" count="12000" sign="$" icon={Svg2} fontColor="rgba(255, 51, 63, 1)" bgColor="rgba(255, 51, 63, 0.2)" />
             <OrderInfo name="Profit" count="2400" sign="$" icon={Svg3} fontColor="rgba(255, 149, 51, 1)" bgColor="rgba(255, 149, 51, 0.2)" />
             <Battery />
             <Clock />
-          </div>
+          </Row>
           <Users />
         </div>
-      </div>
+      </Container>
     </main>
   )
 }

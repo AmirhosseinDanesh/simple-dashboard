@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Clock.css'
+import {Col} from "react-bootstrap"
 class Clock extends Component {
 
 
@@ -35,7 +36,7 @@ class Clock extends Component {
 
     render() {
         return (
-            <div className='col-6 py-4 py-md-0 col-md-3'>
+            <Col xs={6} md={3} className='py-4 py-md-0'>
                 <div className='ClockColor d-flex justify-content-center'>
                     <div className="clock">
                         <div className="outer-clock-face">
@@ -51,7 +52,7 @@ class Clock extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Col>
         );
     }
 }

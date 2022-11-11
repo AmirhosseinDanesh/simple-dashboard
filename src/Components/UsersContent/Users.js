@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Row} from "react-bootstrap"
+import Table from 'react-bootstrap/Table';
 import "./user.css"
 class Users extends Component {
     constructor() {
@@ -25,7 +25,7 @@ class Users extends Component {
 
     render() {
         return (
-            <div className='row py-0 py-md-4 ms-0 ms-md-2 px-2'>
+            <Row className='py-0 py-md-4 ms-0 ms-md-2 px-2'>
                 <div className='bgtableColor justify-content-center'>
                     <div className="Navbar_input d-flex align-items-center p-2 my-3 col-12 col-md-6   ">
                         <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ class Users extends Component {
                         <input type="text" className='navInput2 ms-2 ' id='inputId' placeholder='Search user' />
                     </div>
                     <div className='table-responsive col-12 col-md-12 d-md-block'>
-                        <table className='table'>
+                        <Table hover>
                             <thead className='thead'>
                                 <tr className='table_head'>
                                     <th scope="col">id</th>
@@ -59,10 +59,10 @@ class Users extends Component {
                                     </tr>
                                 ))}
                             </tbody>
-                        </table>
+                        </Table>
                     </div>
                 </div>
-            </div >
+            </Row >
         );
     }
 }

@@ -39,17 +39,29 @@ export default function NabvarContent(props) {
             if (nav.classList.contains("col-md-3")) {
                 nav.classList.remove("col-md-3")
                 nav.classList.add("col-md-1")
+
                 main.classList.remove("col-md-9")
                 main.classList.add("col-md-11")
-                activer.classList.add("active")
 
+                main.classList.remove("col-10")
+                main.classList.add("col-12")
+                
+                activer.classList.add("active")
+                
+                nav.style.display = "none"
 
             } else {
                 nav.classList.add("col-md-3")
                 nav.classList.remove("col-md-1")
+
                 main.classList.add("col-md-9")
                 main.classList.remove("col-md-11")
+
+                main.classList.add("col-10")
+                main.classList.remove("col-12")
+
                 activer.classList.remove("active")
+                nav.style.display = "flex"
 
             }
         })

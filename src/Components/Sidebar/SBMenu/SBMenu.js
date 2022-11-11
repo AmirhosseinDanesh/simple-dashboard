@@ -40,7 +40,7 @@ export default function SBMenu() {
             </li>
           </a>
           <a href="#/">
-            <li className="menu_item py-md-3 mb-4 mb-md-2 ">
+            <li className="menu_item px-2 py-md-3 mb-4 mb-md-2 ">
               <div className='d-flex justify-content-center justify-content-md-between '>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">User Insights</a>
                 <FaUsers style={{
@@ -73,7 +73,7 @@ export default function SBMenu() {
         <div className='menu_list'>
           <ul className="menu_list text-white ps-md-2 ps-0 collapse show" id="collapseExample2">
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text  text-white text-decoration-none  ' href="/#">Addresses</a>
                   <HiLocationMarker style={{
@@ -86,7 +86,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Comments</a>
                   <FaComment style={{
@@ -99,7 +99,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Posts</a>
                   <HiPencil style={{
@@ -112,7 +112,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Purchases</a>
                   <AiOutlineShoppingCart style={{
@@ -125,7 +125,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3    ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Tags</a>
                   <AiFillTags style={{
@@ -138,7 +138,7 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3    ">
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
                 <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Users</a>
                   <HiUsers style={{

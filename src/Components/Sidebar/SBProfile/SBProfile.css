@@ -1,26 +1,29 @@
-.nav_profile{
-
+.nav_profile {
 }
-.profile_img{
-    margin-right:0.7rem;
+.profile_img {
+  margin-right: 0.7rem;
 }
-#profile_img_border{
-    border: 4px green solid;
-}
-
-.profile_info h5{
-    margin-bottom:0.3rem;
-    font-size:18px;
-    
-}
-.profile_info p{
-    opacity:0.6;
-    font-size:11px;
-    margin-bottom:0px;
-    
+#profile_img_border {
+  border: 4px green solid;
+  width: 55px;
 }
 
-
-button.navbar-toggler.bg-light{
-    font-size:1rem !important;
+.profile_info h5 {
+  margin-bottom: 0.3rem;
+  font-size: 18px;
 }
+.profile_info p {
+  opacity: 0.6;
+  font-size: 11px;
+  margin-bottom: 0px;
+}
+
+button.navbar-toggler.bg-light {
+  font-size: 1rem !important;
+}
+
+/* @media only screen and (max-width: 400px) {
+  #profile_img_border {
+    width: 35px;
+  }
+} */

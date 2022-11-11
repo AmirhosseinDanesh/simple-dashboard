@@ -9,7 +9,7 @@ import { AiOutlineShoppingCart, AiFillTags } from "react-icons/ai"
 
 export default function SBMenu() {
   return (
-    <div className='menu pt-md-4 ps-md-4'>
+    <div className='menu  pt-md-4 ps-md-4'>
       <div className='menu_first'>
         <div className='menu_ul d-flex align-items-center justify-content-md-between py-md-4' data-bs-toggle="collapse" data-bs-target="#collapseExample">
           <div className='d-flex justify-content-center align-items-center'>

@@ -1,6 +1,6 @@
 import React from 'react';
-import './SBProfile.css'
-
+import './SBProfile.css';
+import Image from "react-bootstrap/Image";
 
 
 function SBProfile() {
@@ -8,7 +8,7 @@ function SBProfile() {
         <div className='d-flex justify-content-center justify-content-md-start'>
             <div className='nav_profile d-flex justify-content-between align-items-center py-3'>
                 <div className='profile_img'>
-                    <img src={'./pictures/nav/profile.png'} alt="#" id='profile_img_border' className='rounded-circle  p-1' />
+                    <Image src='./pictures/nav/profile.png' alt="#" id='profile_img_border' className='rounded-circle  p-1' thumbnail />
                 </div>
                 <div className='profile_info'>
                     <h5 className='text-white'>Amir Danesh</h5>

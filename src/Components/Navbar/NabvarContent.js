@@ -19,7 +19,6 @@ export default function NabvarContent(props) {
             }
         })
 
-        
 
 
         let message = document.querySelector(".translatbadage")

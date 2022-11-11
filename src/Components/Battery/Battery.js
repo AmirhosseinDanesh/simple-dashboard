@@ -14,7 +14,7 @@ class Battery extends Component {
             .then(res => {
                 // let battery = res.level*100
                 this.setState({
-                    battery: res.level*100
+                    battery: Math.floor(res.level*100)
                 })
             })
     }

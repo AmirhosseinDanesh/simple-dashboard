@@ -1,7 +1,7 @@
 .menu_item_active{
     background: white;
     border-radius: 21px;
-    padding:1rem 1rem;
+    padding:1rem 1rem !important;
 }
 .menu_item_active a{
     color:#5459EA !important;
@@ -17,5 +17,14 @@
 .collapsed .menu_collapse-icon{
     rotate:0deg;
     
+}
+
+@media only screen and (min-width: 767px){
+    .menuItem{
+        padding:0 1rem; 
+    }
+    .menu_item_active {
+            padding: 1rem 1.5rem !important;
+    }
 }
 

@@ -28,7 +28,7 @@ export default function SBMenu() {
         <ul className="menu_list text-white ps-0 ps-md-2 collapse show" id="collapseExample">
           <a href="#/">
             <li className="menu_item  mb-4 mb-md-2 ">
-              <div className='d-flex justify-content-center justify-content-md-between menu_item_active '>
+              <div className='d-flex justify-content-center justify-content-md-between menuItem menu_item_active '>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">main</a>
                 <MdOutlineHomeMax style={{
                   color: 'black',
@@ -41,7 +41,7 @@ export default function SBMenu() {
           </a>
           <a href="#/">
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2 ">
-              <div className='d-flex justify-content-center justify-content-md-between '>
+              <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">User Insights</a>
                 <FaUsers style={{
                   color: 'white',
@@ -74,7 +74,7 @@ export default function SBMenu() {
           <ul className="menu_list text-white ps-md-2 ps-0 collapse show" id="collapseExample2">
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text  text-white text-decoration-none  ' href="/#">Addresses</a>
                   <HiLocationMarker style={{
                     color: 'white',
@@ -87,7 +87,7 @@ export default function SBMenu() {
             </a>
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Comments</a>
                   <FaComment style={{
                     color: 'white',
@@ -100,7 +100,7 @@ export default function SBMenu() {
             </a>
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Posts</a>
                   <HiPencil style={{
                     color: 'white',
@@ -113,7 +113,7 @@ export default function SBMenu() {
             </a>
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Purchases</a>
                   <AiOutlineShoppingCart style={{
                     color: 'white',
@@ -126,7 +126,7 @@ export default function SBMenu() {
             </a>
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Tags</a>
                   <AiFillTags style={{
                     color: 'white',
@@ -139,7 +139,7 @@ export default function SBMenu() {
             </a>
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
-                <div className='d-flex justify-content-center justify-content-md-between '>
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Users</a>
                   <HiUsers style={{
                     color: 'white',

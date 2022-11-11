@@ -19,6 +19,7 @@ export default function NabvarContent(props) {
             }
         })
 
+        
 
 
         let message = document.querySelector(".translatbadage")
@@ -74,7 +75,7 @@ export default function NabvarContent(props) {
             <Col xs={4} md={1} className=" order-0 ">
                 <div className=' m-2 p-2 pe-5'>
                     <div id="menuToggle">
-                        <input type="checkbox" />
+                        <input type="checkbox"  />
                         <span></span>
                         <span></span>
                         <span></span>

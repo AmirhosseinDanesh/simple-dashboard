@@ -27,3 +27,8 @@ button.navbar-toggler.bg-light {
     width: 35px;
   }
 } */
+
+
+#menuToggle input:checked .menuItem{
+  justify-content:center !important;
+}

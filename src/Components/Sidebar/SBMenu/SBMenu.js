@@ -27,8 +27,8 @@ export default function SBMenu() {
 
         <ul className="menu_list text-white ps-0 ps-md-2 collapse show" id="collapseExample">
           <a href="#/">
-            <li className="menu_item  py-md-3 menu_item_active px-3 mb-4 mb-md-2 ">
-              <div className='d-flex justify-content-between mr-15'>
+            <li className="menu_item  mb-4 mb-md-2 ">
+              <div className='d-flex justify-content-center justify-content-md-between menu_item_active '>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">main</a>
                 <MdOutlineHomeMax style={{
                   color: 'black',
@@ -40,8 +40,8 @@ export default function SBMenu() {
             </li>
           </a>
           <a href="#/">
-            <li className="menu_item py-md-3 mb-4 mb-md-2  px-3 ">
-              <div className='d-flex justify-content-between mr-15'>
+            <li className="menu_item py-md-3 mb-4 mb-md-2 ">
+              <div className='d-flex justify-content-center justify-content-md-between '>
                 <a className='sidebar_text text-white text-decoration-none  ' href="/#">User Insights</a>
                 <FaUsers style={{
                   color: 'white',
@@ -73,8 +73,8 @@ export default function SBMenu() {
         <div className='menu_list'>
           <ul className="menu_list text-white ps-md-2 ps-0 collapse show" id="collapseExample2">
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3  px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text  text-white text-decoration-none  ' href="/#">Addresses</a>
                   <HiLocationMarker style={{
                     color: 'white',
@@ -86,8 +86,8 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3  px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Comments</a>
                   <FaComment style={{
                     color: 'white',
@@ -99,8 +99,8 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3  px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Posts</a>
                   <HiPencil style={{
                     color: 'white',
@@ -112,8 +112,8 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3  px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3 ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Purchases</a>
                   <AiOutlineShoppingCart style={{
                     color: 'white',
@@ -125,8 +125,8 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3     px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3    ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Tags</a>
                   <AiFillTags style={{
                     color: 'white',
@@ -138,8 +138,8 @@ export default function SBMenu() {
               </li>
             </a>
             <a href="#/">
-              <li className="menu_item mb-4 mb-md-2 py-md-3     px-3 ">
-                <div className='d-flex justify-content-between mr-15'>
+              <li className="menu_item mb-4 mb-md-2 py-md-3    ">
+                <div className='d-flex justify-content-center justify-content-md-between '>
                   <a className='sidebar_text text-white text-decoration-none  ' href="/#">Users</a>
                   <HiUsers style={{
                     color: 'white',

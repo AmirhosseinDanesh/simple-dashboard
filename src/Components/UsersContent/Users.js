@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import {Row} from "react-bootstrap"
-import Table from 'react-bootstrap/Table';
-import "./user.css"
+import { Row, Table } from "react-bootstrap"
+import "./user.css";
+import Skeleton  from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
+
+
+
 class Users extends Component {
     constructor() {
         super()
@@ -21,7 +25,7 @@ class Users extends Component {
                     users: data
                 })
             })
-    } 
+    }
 
     render() {
         return (
@@ -34,32 +38,91 @@ class Users extends Component {
                         <input type="text" className='navInput2 ms-2 ' id='inputId' placeholder='Search user' />
                     </div>
                     <div className='table-responsive col-12 col-md-12 d-md-block'>
-                        <Table hover>
-                            <thead className='thead'>
-                                <tr className='table_head'>
-                                    <th scope="col">id</th>
-                                    <th scope="col">name</th>
-                                    <th scope="col">email</th>
-                                    <th scope="col">phone</th>
-                                    <th scope="col">city</th>
-                                    <th scope="col">zipcode</th>
-                                </tr>
-                            </thead>
-                            <tbody className='tablebody'>
-                                {this.state.users.map(user => (
-                                    <tr id='trTable' key={user.id}>
-                                        <th scope="row">{user.id}</th>
-                                        <td>
-                                            <a href="#/">{user.name}</a>
-                                        </td>
-                                        <td>{user.email}</td>
-                                        <td>{user.phone}</td>
-                                        <td>{user.address.city}</td>
-                                        <td>{user.address.zipcode}</td>
+                        {this.state.users.length ? (
+                            <Table hover>
+                                <thead className='thead'>
+                                    <tr className='table_head'>
+                                        <th scope="col">id</th>
+                                        <th scope="col">name</th>
+                                        <th scope="col">email</th>
+                                        <th scope="col">phone</th>
+                                        <th scope="col">city</th>
+                                        <th scope="col">zipcode</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                                </thead>
+                                <tbody className='tablebody'>
+                                    {this.state.users.map(user => (
+                                        <tr id='trTable' key={user.id}>
+                                            <th scope="row">{user.id}</th>
+                                            <td>
+                                                <a href="#/">{user.name}</a>
+                                            </td>
+                                            <td>{user.email}</td>
+                                            <td>{user.phone}</td>
+                                            <td>{user.address.city}</td>
+                                            <td>{user.address.zipcode}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </Table>
+                        ) :
+                            <Table>
+                                <thead className='thead'>
+                                    <tr className='table_head'>
+                                        <th scope="col">id</th>
+                                        <th scope="col">name</th>
+                                        <th scope="col">email</th>
+                                        <th scope="col">phone</th>
+                                        <th scope="col">city</th>
+                                        <th scope="col">zipcode</th>
+                                    </tr>
+                                </thead>
+                                <tbody className='tablebody'>
+                                        <tr id='trTable'>
+                                            <th scope="row"><Skeleton height={"2.5rem"}/></th>
+                                            <td>
+                                                <a href="#/"><Skeleton height={"2.5rem"}/></a>
+                                            </td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                        </tr>
+                                        <tr id='trTable'>
+                                            <th scope="row"><Skeleton height={"2.5rem"}/></th>
+                                            <td>
+                                                <a href="#/"><Skeleton height={"2.5rem"}/></a>
+                                            </td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                        </tr>
+                                        <tr id='trTable'>
+                                            <th scope="row"><Skeleton height={"2.5rem"}/></th>
+                                            <td>
+                                                <a href="#/"><Skeleton height={"2.5rem"}/></a>
+                                            </td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                        </tr>
+                                        <tr id='trTable'>
+                                            <th scope="row"><Skeleton height={"2.5rem"}/></th>
+                                            <td>
+                                                <a href="#/"><Skeleton height={"2.5rem"}/></a>
+                                            </td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                            <td><Skeleton height={"2.5rem"}/></td>
+                                        </tr>
+
+                                </tbody>
+                            </Table>
+                        }
+
                     </div>
                 </div>
             </Row >

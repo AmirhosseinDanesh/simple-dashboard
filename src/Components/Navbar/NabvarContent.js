@@ -20,14 +20,11 @@ export default function NabvarContent(props) {
         })
 
 
-
         let message = document.querySelector(".translatbadage")
         let hidden = document.querySelector(".visually-hidden")
         message.addEventListener("click", function () {
             hidden.classList.toggle("visually-hidden")
         })
-
-
 
 
         let navBtn = document.querySelector("#menuToggle")

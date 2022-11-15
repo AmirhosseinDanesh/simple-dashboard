@@ -1,14 +1,11 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import './Clock.css'
-import {Col} from "react-bootstrap"
-class Clock extends Component {
+import { Col } from "react-bootstrap"
+function Clock() {
 
 
-    state = {}
 
-
-    componentDidMount() {
-
+    useEffect(() => {
         const secondHand = document.querySelector('.second-hand');
         const minsHand = document.querySelector('.min-hand');
         const hourHand = document.querySelector('.hour-hand');
@@ -28,33 +25,34 @@ class Clock extends Component {
             const hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) + 90;
             hourHand.style.transform = `rotate(${hourDegrees}deg)`;
         }
-
         setInterval(setDate, 1000);
 
         setDate();
-    }
+    }, [])
 
-    render() {
-        return (
-            <Col xs={6} md={3} className='py-4 py-md-0'>
-                <div className='ClockColor d-flex justify-content-center'>
-                    <div className="clock">
-                        <div className="outer-clock-face">
-                                <div className="marking marking-one"></div>
-                                <div className="marking marking-two"></div>
-                                <div className="marking marking-three"></div>
-                                <div className="marking marking-four"></div>
-                                <div className="inner-clock-face">
-                                <div className="hand hour-hand"></div>
-                                <div className="hand min-hand"></div>
-                                <div className="hand second-hand"></div>
-                            </div>
+
+
+
+
+    return (
+        <Col xs={6} md={3} className='py-4 py-md-0'>
+            <div className='ClockColor d-flex justify-content-center'>
+                <div className="clock">
+                    <div className="outer-clock-face">
+                        <div className="marking marking-one"></div>
+                        <div className="marking marking-two"></div>
+                        <div className="marking marking-three"></div>
+                        <div className="marking marking-four"></div>
+                        <div className="inner-clock-face">
+                            <div className="hand hour-hand"></div>
+                            <div className="hand min-hand"></div>
+                            <div className="hand second-hand"></div>
                         </div>
                     </div>
                 </div>
-            </Col>
-        );
-    }
+            </div>
+        </Col>
+    );
 }
 
 export default Clock;

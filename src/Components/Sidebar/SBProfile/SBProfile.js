@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SBProfile.css';
 import Image from "react-bootstrap/Image";
 
 
 function SBProfile() {
+    useEffect(() => {
+
+        window.addEventListener("online", function () {
+            document.querySelector("#profile_img_border").style.borderColor = "green"
+        })
+
+        window.addEventListener("offline", function () {
+            document.querySelector("#profile_img_border").style.borderColor = "red"
+        })
+
+    }, [])
     return (
         <div className='d-flex justify-content-center justify-content-md-start'>
             <div className='nav_profile d-flex justify-content-between align-items-center py-3'>
@@ -20,17 +31,6 @@ function SBProfile() {
 
 
 
-            {
-                window.addEventListener("online", function () {
-                    document.querySelector("#profile_img_border").style.borderColor = "green"
-                })
-            }
-
-            {
-                window.addEventListener("offline", function () {
-                    document.querySelector("#profile_img_border").style.borderColor = "red"
-                })
-            }
 
 
         </div>

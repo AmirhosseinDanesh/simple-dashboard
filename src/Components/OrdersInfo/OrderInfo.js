@@ -1,6 +1,7 @@
 import React from 'react'
 import './Orderinfo.css'
 import {Col} from "react-bootstrap"
+
 export default function OrderInfo(props) {
     let {name , count, bgColor , icon , fontColor , sign} = props
     return (     

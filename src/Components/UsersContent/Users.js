@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Row, Table } from "react-bootstrap"
 import "./user.css";
 import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css'
+
+
 
 
 
@@ -12,13 +13,15 @@ function Users() {
 
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users")
-            .then(res => {
-                return res.json()
-            })
-            .then(data => {
-                setusers( users => data)
-            })
+        setTimeout(() => {
+            fetch("https://jsonplaceholder.typicode.com/users")
+                .then(res => {
+                    return res.json()
+                })
+                .then(data => {
+                    setusers(users => data)
+                })
+        }, 4000);
     })
 
 

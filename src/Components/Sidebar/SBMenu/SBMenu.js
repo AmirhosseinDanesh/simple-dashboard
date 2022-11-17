@@ -5,6 +5,7 @@ import { HiLocationMarker, HiUsers, HiPencil } from "react-icons/hi"
 import { CgDatabase } from "react-icons/cg"
 import { FaComment, FaUsers } from "react-icons/fa"
 import { AiOutlineShoppingCart, AiFillTags } from "react-icons/ai"
+import {  NavLink } from 'react-router-dom'
 
 
 export default function SBMenu() {
@@ -26,23 +27,24 @@ export default function SBMenu() {
         </div>
 
         <ul className="menu_list text-white ps-0 ps-md-2 collapse show" id="collapseExample">
-          <a href="#/">
-            <li className="menu_item  mb-4 mb-md-2 ">
-              <div className='d-flex justify-content-center justify-content-md-between menuItem menu_item_active '>
-                <a className='sidebar_text text-white text-decoration-none  ' href="/#">main</a>
+          <NavLink to="/" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+            
+            <li className="menu_item px-2 py-md-3 mb-4 mb-md-2">
+              <div className='d-flex justify-content-center justify-content-md-between menuItem  '>
+                <p className='sidebar_text mb-0 text-white'>main</p>
                 <MdOutlineHomeMax style={{
-                  color: 'black',
+                  color: 'white',
                   fontSize: "1.25rem",
 
                 }} />
 
               </div>
             </li>
-          </a>
-          <a href="#/">
+          </NavLink>
+          <NavLink to="/user" className={(link)=>link.isActive ? "menu_item_active" : ""}>
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2 ">
               <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                <a className='sidebar_text text-white text-decoration-none  ' href="/#">User Insights</a>
+                <p className='sidebar_text mb-0 text-white'>User Insights</p>
                 <FaUsers style={{
                   color: 'white',
                   fontSize: "1.25rem",
@@ -51,7 +53,7 @@ export default function SBMenu() {
 
               </div>
             </li>
-          </a>
+          </NavLink>
         </ul>
 
 
@@ -75,7 +77,7 @@ export default function SBMenu() {
             <a href="#/">
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text  text-white text-decoration-none  ' href="/#">Addresses</a>
+                  <p className='sidebar_text mb-0  text-white'>Addresses</p>
                   <HiLocationMarker style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -85,10 +87,10 @@ export default function SBMenu() {
                 </div>
               </li>
             </a>
-            <a href="#/">
+            <NavLink to="/Comments" className={(link)=>link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text text-white text-decoration-none  ' href="/#">Comments</a>
+                  <p className='sidebar_text mb-0 text-white'>Comments</p>
                   <FaComment style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -97,11 +99,11 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
-            <a href="#/">
+            </NavLink>
+            <NavLink to="/Posts" className={(link)=>link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text text-white text-decoration-none  ' href="/#">Posts</a>
+                  <p className='sidebar_text mb-0 text-white'>Posts</p>
                   <HiPencil style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -110,11 +112,11 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
-            <a href="#/">
+            </NavLink>
+            <NavLink to="/Purchases" className={(link)=>link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text text-white text-decoration-none  ' href="/#">Purchases</a>
+                  <p className='sidebar_text mb-0 text-white'>Purchases</p>
                   <AiOutlineShoppingCart style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -123,11 +125,11 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
-            <a href="#/">
+            </NavLink>
+            <NavLink to="/Tags" className={(link)=>link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text text-white text-decoration-none  ' href="/#">Tags</a>
+                  <p className='sidebar_text mb-0 text-white'>Tags</p>
                   <AiFillTags style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -136,11 +138,11 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
-            <a href="#/">
+            </NavLink>
+            <NavLink to="/Users" className={(link)=>link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <a className='sidebar_text text-white text-decoration-none  ' href="/#">Users</a>
+                  <p className='sidebar_text mb-0 text-white'>Users</p>
                   <HiUsers style={{
                     color: 'white',
                     fontSize: "1.25rem",
@@ -149,7 +151,7 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
+            </NavLink>
 
           </ul>
         </div>

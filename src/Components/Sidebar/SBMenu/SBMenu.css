@@ -1,11 +1,13 @@
-.menu_item_active{
+.menu_item_active li{
     background: white;
     border-radius: 21px;
-    padding:1rem 1rem !important;
 }
-.menu_item_active a{
-    color:#5459EA !important;
+.menu_item_active p,
+.menu_item_active svg
+{
+    color:black !important;
 }
+
 #collapseExample,#collapseExample2{
     transition: 900ms;
 }
@@ -19,11 +21,13 @@
     
 }
 
+
+
 @media only screen and (min-width: 767px){
     .menuItem{
         padding:0 1rem; 
     }
-    .menu_item_active {
+    .menu_item_active{
             padding: 1rem 1.5rem !important;
     }
 }

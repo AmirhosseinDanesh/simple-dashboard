@@ -20,7 +20,7 @@ function Battery() {
                         battery => Math.floor(res.level * 100)
 
                     ))
-                }, 3000);
+                }, 1000);
             })
     }, [])
 

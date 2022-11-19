@@ -23,7 +23,6 @@ function IndexContent() {
         timer => true
       ))
     }, 1000);
-
   }, [])
 
   return (

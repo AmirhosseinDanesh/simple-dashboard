@@ -41,7 +41,7 @@ export default function SBMenu() {
               </div>
             </li>
           </NavLink>
-          <NavLink to="/user" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+          <NavLink to="/users" className={(link)=>link.isActive ? "menu_item_active" : ""}>
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2 ">
               <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                 <p className='sidebar_text mb-0 text-white'>User Insights</p>

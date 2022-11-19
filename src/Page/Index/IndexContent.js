@@ -43,9 +43,9 @@ function IndexContent() {
 
             ) : (
               <>
-                <OrderInfo name={<Skeleton height={'1rem'} width={100} />} count={<Skeleton height={'1rem'} width={100} />} sign={Skeleton} icon={Svg3} bgColor="rgba(51, 102, 255, 0.2)" />
-                <OrderInfo name={<Skeleton height={'1rem'} width={100} />} count={<Skeleton height={'1rem'} width={100} />} sign={Skeleton} icon={Svg3} bgColor="rgba(255, 51, 63, 0.2)" />
-                <OrderInfo name={<Skeleton height={'1rem'} width={100} />} count={<Skeleton height={'1rem'} width={100} />} sign={Skeleton} icon={Svg3} bgColor="rgba(255, 149, 51, 0.2)" />
+                <OrderInfo name={<Skeleton height={'1rem'} width={50} />} count={<Skeleton height={'1rem'} width={50} />} sign={Skeleton} icon={Svg3} bgColor="rgba(51, 102, 255, 0.2)" />
+                <OrderInfo name={<Skeleton height={'1rem'} width={50} />} count={<Skeleton height={'1rem'} width={50} />} sign={Skeleton} icon={Svg3} bgColor="rgba(255, 51, 63, 0.2)" />
+                <OrderInfo name={<Skeleton height={'1rem'} width={50} />} count={<Skeleton height={'1rem'} width={50} />} sign={Skeleton} icon={Svg3} bgColor="rgba(255, 149, 51, 0.2)" />
                 <Battery />
                 <Clock />
               </>

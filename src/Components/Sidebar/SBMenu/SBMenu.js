@@ -5,7 +5,7 @@ import { HiLocationMarker, HiUsers, HiPencil } from "react-icons/hi"
 import { CgDatabase } from "react-icons/cg"
 import { FaComment, FaUsers } from "react-icons/fa"
 import { AiOutlineShoppingCart, AiFillTags } from "react-icons/ai"
-import {  NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 export default function SBMenu() {
@@ -27,8 +27,8 @@ export default function SBMenu() {
         </div>
 
         <ul className="menu_list text-white ps-0 ps-md-2 collapse show" id="collapseExample">
-          <NavLink to="/" className={(link)=>link.isActive ? "menu_item_active" : ""}>
-            
+          <NavLink to="/" className={(link) => link.isActive ? "menu_item_active" : ""}>
+
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2">
               <div className='d-flex justify-content-center justify-content-md-between menuItem  '>
                 <p className='sidebar_text mb-0 text-white'>main</p>
@@ -41,7 +41,7 @@ export default function SBMenu() {
               </div>
             </li>
           </NavLink>
-          <NavLink to="/users" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+          <NavLink to="/users" className={(link) => link.isActive ? "menu_item_active" : ""}>
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2 ">
               <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                 <p className='sidebar_text mb-0 text-white'>User Insights</p>
@@ -74,7 +74,20 @@ export default function SBMenu() {
         </div>
         <div className='menu_list'>
           <ul className="menu_list text-white ps-md-2 ps-0 collapse show" id="collapseExample2">
-            <a href="#/">
+            <NavLink to="/User" className={(link) => link.isActive ? "menu_item_active" : ""}>
+              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
+                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
+                  <p className='sidebar_text mb-0 text-white'>Users</p>
+                  <HiUsers style={{
+                    color: 'white',
+                    fontSize: "1.25rem",
+
+                  }} />
+
+                </div>
+              </li>
+            </NavLink>
+            <Link to="/Addresses" className={(link) => link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <p className='sidebar_text mb-0  text-white'>Addresses</p>
@@ -86,8 +99,8 @@ export default function SBMenu() {
 
                 </div>
               </li>
-            </a>
-            <NavLink to="/Comments" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+            </Link>
+            <NavLink to="/Comments" className={(link) => link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <p className='sidebar_text mb-0 text-white'>Comments</p>
@@ -100,7 +113,7 @@ export default function SBMenu() {
                 </div>
               </li>
             </NavLink>
-            <NavLink to="/Posts" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+            <NavLink to="/Posts" className={(link) => link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <p className='sidebar_text mb-0 text-white'>Posts</p>
@@ -113,7 +126,7 @@ export default function SBMenu() {
                 </div>
               </li>
             </NavLink>
-            <NavLink to="/Purchases" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+            <NavLink to="/Purchases" className={(link) => link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3 ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <p className='sidebar_text mb-0 text-white'>Purchases</p>
@@ -126,24 +139,11 @@ export default function SBMenu() {
                 </div>
               </li>
             </NavLink>
-            <NavLink to="/Tags" className={(link)=>link.isActive ? "menu_item_active" : ""}>
+            <NavLink to="/Tags" className={(link) => link.isActive ? "menu_item_active" : ""}>
               <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
                 <div className='d-flex justify-content-center justify-content-md-between menuItem '>
                   <p className='sidebar_text mb-0 text-white'>Tags</p>
                   <AiFillTags style={{
-                    color: 'white',
-                    fontSize: "1.25rem",
-
-                  }} />
-
-                </div>
-              </li>
-            </NavLink>
-            <NavLink to="/Users" className={(link)=>link.isActive ? "menu_item_active" : ""}>
-              <li className="menu_item px-2 mb-4 mb-md-2 py-md-3    ">
-                <div className='d-flex justify-content-center justify-content-md-between menuItem '>
-                  <p className='sidebar_text mb-0 text-white'>Users</p>
-                  <HiUsers style={{
                     color: 'white',
                     fontSize: "1.25rem",
 

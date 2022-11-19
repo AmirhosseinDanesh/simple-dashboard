@@ -4,6 +4,7 @@ import Skeleton from 'react-loading-skeleton';
 import { useParams } from 'react-router-dom';
 
 export default function UserInfo(props) {
+
     const [user, setuser] = useState([])
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -19,8 +20,9 @@ export default function UserInfo(props) {
             .then(data => {
                 setuser(user => data)
             })
-    })
+    }, [])
 
+    
 
     return (
         <>
@@ -31,7 +33,6 @@ export default function UserInfo(props) {
                 Delete {user.name}
             </Button>
 
-            
 
             {user ? (
                 <Modal show={show} onHide={handleClose}>

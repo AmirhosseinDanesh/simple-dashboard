@@ -1,7 +1,5 @@
-import { wait } from '@testing-library/user-event/dist/utils';
 import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import { Button, Modal, Form } from 'react-bootstrap';
 import Skeleton from 'react-loading-skeleton';
 import { useParams } from 'react-router-dom';
 
@@ -9,8 +7,7 @@ export default function UserInfo(props) {
     const [user, setuser] = useState([])
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true)
-
+    const handleShow = () => setShow(true);
 
     let params = useParams()
 
@@ -27,9 +24,14 @@ export default function UserInfo(props) {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch demo modal {params.userID}
+            <Button className='me-2' size='sm' variant="outline-primary" onClick={handleShow}>
+                Edit {user.name}
             </Button>
+            <Button className='me-2' size='sm' variant="outline-danger" onClick={handleShow}>
+                Delete {user.name}
+            </Button>
+
+            
 
             {user ? (
                 <Modal show={show} onHide={handleClose}>
@@ -37,11 +39,28 @@ export default function UserInfo(props) {
                         <Modal.Title>Editing <p style={{ color: 'red', }}>{user.name}</p></Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <p>Email : {user.email}</p>
-                        <p>Address : {user.address.city} , {user.address.street} , {user.address.suite} , {user.address.zipcode}</p>
-                        <p>Phone : {user.phone}</p>
-                        <p>Website : {user.website}</p>
-                        <p>Company Name : {user.company.name}</p>
+                        <Form>
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Editing Email address : {user.email} </Form.Label>
+                                <Form.Control type="email" placeholder={user.email} />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Editing Phone : {user.phone} </Form.Label>
+                                <Form.Control type="email" placeholder={user.phone} />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Editing Website : {user.website} </Form.Label>
+                                <Form.Control type="email" placeholder={user.website} />
+                            </Form.Group>
+                            {/* <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Label>Editing Street : {user.address.street} </Form.Label>
+                                <Form.Control type="email" placeholder={user.address.street} />
+                            </Form.Group> */}
+                        </Form>
+
+
+
+
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
@@ -75,6 +94,8 @@ export default function UserInfo(props) {
                     </Modal.Footer>
                 </Modal>
             )}
+
+
         </>
     );
 }

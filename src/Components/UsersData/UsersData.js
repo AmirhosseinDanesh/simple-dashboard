@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row, Table } from "react-bootstrap"
 import "./user.css";
 import Skeleton from 'react-loading-skeleton';
+import { Link } from 'react-router-dom';
 
 
 
@@ -53,7 +54,7 @@ function UsersData() {
                                     <tr id='trTable' key={user.id}>
                                         <th scope="row">{user.id}</th>
                                         <td>
-                                            <a href="#/">{user.name}</a>
+                                            <Link to={`/user/${user.id}`}>{user.name}</Link>
                                         </td>
                                         <td>{user.email}</td>
                                         <td>{user.phone}</td>

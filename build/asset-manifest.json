@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Cv/CvProject/Public/React-Dashboard/build/static/css/main.3b8ec41c.css",
-    "main.js": "/Cv/CvProject/Public/React-Dashboard/build/static/js/main.2a52a0b2.js",
-    "index.html": "/Cv/CvProject/Public/React-Dashboard/build/index.html",
-    "main.3b8ec41c.css.map": "/Cv/CvProject/Public/React-Dashboard/build/static/css/main.3b8ec41c.css.map",
-    "main.2a52a0b2.js.map": "/Cv/CvProject/Public/React-Dashboard/build/static/js/main.2a52a0b2.js.map"
+    "main.css": "./static/css/main.1d2ff348.css",
+    "main.js": "./static/js/main.6a6cf6e9.js",
+    "index.html": "./index.html",
+    "main.1d2ff348.css.map": "./static/css/main.1d2ff348.css.map",
+    "main.6a6cf6e9.js.map": "./static/js/main.6a6cf6e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b8ec41c.css",
-    "static/js/main.2a52a0b2.js"
+    "static/css/main.1d2ff348.css",
+    "static/js/main.6a6cf6e9.js"
   ]
 }

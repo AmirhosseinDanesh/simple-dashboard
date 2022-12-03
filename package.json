@@ -2,7 +2,7 @@
   "name": "cms-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bestwebneed.ir/Cv/CvProject/Public/React-Dashboard/build/",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +16,7 @@
     "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "recharts": "^2.1.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

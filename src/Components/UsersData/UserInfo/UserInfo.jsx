@@ -4,6 +4,7 @@ import { useParams , useNavigate } from 'react-router-dom';
 import profile from "../../../pictures/nav/profile.png"
 import {
     ResponsiveContainer, LineChart, Line, XAxis} from "recharts"
+// import DeleteModal from '../../DeleteModal/DeleteModal';
 
 export default function UserInfo(props) {
     const [show, setShow] = useState(false);
@@ -13,7 +14,10 @@ export default function UserInfo(props) {
         setShow(false);
     }
 
-    const handleShow = () => setShow(true);
+    const handleShow = () => {
+        // DeleteModal
+        setShow(true);
+    }
 
     const [user, setuser] = useState([])
     const data = [
@@ -22,7 +26,7 @@ export default function UserInfo(props) {
         { id: 2, name: "Dec", count: 2, y: 10 },
     ]
     let params = useParams()
-
+    
     useEffect(() => {
 
         fetch(`https://jsonplaceholder.typicode.com/users/${params.userID}`)
@@ -35,11 +39,10 @@ export default function UserInfo(props) {
 
     }, [])
 
-   
+    
 
     return (
         <>
-            {/* user.address.geo.lng */}
 
             <Col md={6} sm={12} className="mb-2">
                 <div className="box box-shadow">
@@ -100,11 +103,6 @@ export default function UserInfo(props) {
                     </Button>
                 </Modal.Footer>
             </Modal>
-
-
-
-
-
 
         </>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Chart.css";
-import { ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, PieChart, Pie } from 'recharts';
+import { ResponsiveContainer, LineChart, Cell, Line, CartesianGrid, XAxis, YAxis, Tooltip, PieChart, Pie } from 'recharts';
 import { Row, Col } from 'react-bootstrap';
 export default function Chart() {
     const data = [
@@ -18,6 +18,7 @@ export default function Chart() {
         { name: 'Dec', uv: Math.floor(Math.random() * 1000), pv: 2400, amt: 2400 },
 
     ]
+    const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
     const data2 = [
         { name: 'Mobile', Device: 'Mobile', Count: 2500 },
         { name: 'Pc', Device: 'Pc', Count: 1500 },
@@ -25,7 +26,7 @@ export default function Chart() {
     ]
     return (
         <>
-            <Row className='Charts'>
+            <Row className='Charts m-0 p-0'>
                 <Col md={6} sm={12} >
                     <div className="box box-shadow">
                         <div className="chartLabel ms-3 mt-3">
@@ -58,7 +59,12 @@ export default function Chart() {
                                     outerRadius={80}
                                     fill="#8884d8"
                                     label
-                                />
+                                >
+                                    {data.map((entry, index) => (
+                                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                                    ))}
+                                </Pie>
+
                                 <Tooltip />
                             </PieChart>
                         </ResponsiveContainer>

@@ -9,4 +9,7 @@
 .tableOver {
   overflow-x: auto;
 }
-
+p.MuiTablePagination-selectLabel.css-pdct74-MuiTablePagination-selectLabel , 
+p.MuiTablePagination-displayedRows.css-levciy-MuiTablePagination-displayedRows{
+      margin-bottom: 0rem !important;
+}

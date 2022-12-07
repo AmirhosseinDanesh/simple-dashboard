@@ -31,7 +31,7 @@ export default function SBMenu() {
 
             <li className="menu_item px-2 py-md-3 mb-4 mb-md-2">
               <div className='d-flex justify-content-center justify-content-md-between menuItem  '>
-                <p className='sidebar_text mb-0 text-white'>main</p>
+                <p className='sidebar_text mb-0 text-white'>Main</p>
                 <MdOutlineHomeMax style={{
                   color: 'white',
                   fontSize: "1.25rem",

@@ -15,5 +15,5 @@ export default function useFetch(url) {
                 })
         }, 1000);
     } , [])
-    return [users ]
+    return [users]
 }

@@ -8,8 +8,10 @@ export default function DeleteModal(props) {
     const [show, setShow] = useState(false);
     const navigate = useNavigate()
     const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
 
-    const handleClose = () => {
+
+    const handleCloseAndBack = () => {
         navigate(-1)
         setShow(false);
     }
@@ -29,7 +31,7 @@ export default function DeleteModal(props) {
                     <Button variant="secondary" onClick={handleClose}>
                         No
                     </Button>
-                    <Button variant="danger" onClick={handleClose}>
+                    <Button variant="danger" onClick={handleCloseAndBack}>
                         Yes
                     </Button>
                 </Modal.Footer>

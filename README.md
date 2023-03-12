@@ -1,13 +1,19 @@
-CMS Dashboard
+
+# Simple CMS Dashboard
 
 
-For Use :
-`npm start`
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-`npm run build`
-
-Builds the app for production to the `build` folder.\
 
 
+## Screenshots
+
+![App Screenshot](https://amirdanesh.storage.iran.liara.space/Upload/projects/1.png) 
+
+![App Screenshot](https://amirdanesh.storage.iran.liara.space/Upload/projects/2.png)
+
+## Documentation
+
+Install all required dependencies: npm install
+
+Start the development server: npm start
+
+Open the application in your browser: http://localhost:3000/
